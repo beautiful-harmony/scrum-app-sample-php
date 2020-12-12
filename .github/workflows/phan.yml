@@ -60,4 +60,4 @@ jobs:
         run: "php -m"
 
       - name: "phan"
-        run: "vendor/bin/phan --no-progress-bar --output-mode checkstyle | cs2pr --graceful-warnings --colorize"
+        run: "vendor/bin/phan --allow-polyfill-parser --no-progress-bar --output-mode checkstyle | cs2pr --graceful-warnings --colorize"
